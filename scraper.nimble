@@ -9,7 +9,7 @@ srcDir        = "src"
 # Dependencies
 
 requires "nim >= 1.0.0"
-requires "findxml"
+requires "https://github.com/thisago/findxml"
 
 task gen_docs, "Generates the documentation":
   exec "nim doc --project --out:docs src/scraper.nim"
